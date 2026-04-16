@@ -1,7 +1,7 @@
 body {
-      background-color: #fdf6f0;
+      background-color: #dcd5cf;
 
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-family: Georgia, Times New Roman, Times, 'serif';
       margin: 0;
       display: flex;
       justify-content: center;
@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-    color: #d65a5a;
+    color: #aa3838;
     font-style: italic;
     margin-bottom: 20px;
 }
@@ -37,19 +37,19 @@ h1 {
 }
 
 .poema-texto {
-    font-size: 1.1.rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 1.3;
     text-align: left;
     color: #333;
-    border-left: 3px solid #e7a3a3;
+    border-left: 5px solid #b52828;
     padding-left: 20px;
     margin: 20px auto;
-    width: 90%;
+    width: 95%;
     max-width: 500px;
 }
 
 .flor-container {
-    width: 100px;
+    width: 200px;
     margin-bottom: 10px;
 }
 
