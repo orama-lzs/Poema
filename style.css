@@ -68,4 +68,50 @@ h1 {
         padding-left: 15px;
     }
 
+/* Animación de entrada suave */
+@keyframes aparecer {
+    from { 
+        opacity: 0; 
+        transform: translateY(15px); 
+        filter: blur(5px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+        filter: blur(0); 
+    }
+}
+
+.verso {
+    display: inline-block;
+    opacity: 0; /* Empiezan invisibles */
+}
+
+/* Se activa cuando presionas el botón de inicio */
+.activado .verso {
+    animation: aparecer 2s ease forwards;
+}
+
+/* Tiempos de aparición (Retrasos) */
+.activado .verso:nth-of-type(1)  { animation-delay: 1s; }
+.activado .verso:nth-of-type(2)  { animation-delay: 4s; }
+.activado .verso:nth-of-type(3)  { animation-delay: 7s; }
+.activado .verso:nth-of-type(4)  { animation-delay: 10s; }
+.activado .verso:nth-of-type(5)  { animation-delay: 14s; }
+.activado .verso:nth-of-type(6)  { animation-delay: 17s; }
+.activado .verso:nth-of-type(7)  { animation-delay: 20s; }
+.activado .verso:nth-of-type(8)  { animation-delay: 23s; }
+.activado .verso:nth-of-type(9)  { animation-delay: 27s; }
+.activado .verso:nth-of-type(10) { animation-delay: 30s; }
+.activado .verso:nth-of-type(11) { animation-delay: 33s; }
+.activado .verso:nth-of-type(12) { animation-delay: 36s; }
+.activado .verso:nth-of-type(13) { animation-delay: 40s; }
+.activado .verso:nth-of-type(14) { animation-delay: 43s; }
+.activado .verso:nth-of-type(15) { animation-delay: 46s; }
+.activado .verso:nth-of-type(16) { animation-delay: 49s; }
+.activado .verso:nth-of-type(17) { animation-delay: 53s; }
+.activado .verso:nth-of-type(18) { animation-delay: 56s; }
+.activado .verso:nth-of-type(19) { animation-delay: 59s; }
+.activado .verso:nth-of-type(20) { animation-delay: 62s; }
+
 }
