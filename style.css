@@ -11,29 +11,16 @@ body {
 }
 
 .content {
-    max-width: 900px;
-    padding: 20px;
-    text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
 }
 
 h1 {
     color: #aa3838;
     font-style: italic;
-    margin-bottom: 20px;
-}
-
-/* Nuevo contenedor para poner texto y flor lado a lado */
-.poema-layout {
-    display: flex;
-    flex-wrap: row; /* Esto permite que en el celular se ponga uno abajo del otro */
-    align-items: center;
-    justify-content: center;
-    gap: 30px; /* Espacio entre el texto y la flor */
-} 
-
-.poema-container {
-    width: 100%;
-    max-width: 100%;
+    margin-bottom: 30px;
 }
 
 .poema-texto {
@@ -54,7 +41,7 @@ h1 {
 }
 
 h1 {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     padding: 0 10px;
 }
 
