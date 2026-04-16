@@ -29,22 +29,31 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 30px; /* Espacio entre el texto y la flor */
+} 
+
+.poema-container {
+    width: 100%;
+    max-width: 100%;
 }
 
 .poema-texto {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1.rem;
+    line-height: 1.6;
     white-space: pre-wrap;
     word-wrap: break-word;
     text-align: left;
-    display: inline-block;
+    display: block;
     border-left: 3px solid #e7a3a3;
-    padding-left: 25px;
+    padding-left: 15px
 }
 
 .flor-container {
-    width: 120px;
-    flex-shrink: 0;
+    width: 80px;
+    margin: 0 auto 20px auto;
+}
+
+h1 {
+    font-size: 1.8rem;
 }
 
 .flor-imagen {
@@ -60,7 +69,8 @@ h1 {
 
 @media (max-width: 600px) {
     .poema-layout {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        gap: 10px;
     }
     .poema-texto {
         font-size: 0.95rem;
