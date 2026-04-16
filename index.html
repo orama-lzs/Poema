@@ -24,30 +24,32 @@
         </div>
              <article class="poema-container">
                   <div class="poema-texto">
-Así como te admiro de lejos, <br>
-te diré a través de este poema lo que siento:<br>
-tus hermosos destellos, como madera al sol,<br>
-tu fascinante seda, cual melena de león.<br>
-<br><br>
-Esas líneas oscura como trazos firmes de un pincel,<br>
-esos abanicos curvos sobre tu mirada incandescente,<br>
-ese perfecto perfil que divide el cielo de tu cara,<br>
-y esos pétalos de color carmín que el alma me calma.<br>
-<br><br>
-Me hacen perder la cordura, ¿y que más da?,<br>
-pues quisiera perderme en tu dulce mirar.<br>
-Eres perfecta frescura y es la única verdad<br>
-esa que provoca en mi cuerpo un suave temblar.<br>
-<br><br>
-Ojeras bajo tus destellos se hacen notar,<br>
-y también tus pecas cerca esa curva suave,<br>
-pues me hacen pensar que tienen la llave <br>
-para por fin poderte alcanzar.<br>
-<br><br>
-Un lunar como una peca de noche,<br>
-piel tejida como si fuese algodón;<br>
-tu belleza natural es un derroche,<br>
-es la calma que envuelve a mi corazón.<br>
+<div id="poema-animado" class="poema-texto">
+    <span class="verso">Así como te admiro de lejos,</span><br>
+    <span class="verso">te diré a través de este poema lo que siento:</span><br>
+    <span class="verso">tus hermosos destellos, como madera al sol,</span><br>
+    <span class="verso">tu fascinante seda, cual melena de león.</span><br>
+    <br>
+    <span class="verso">Esas líneas oscuras como trazos firmes de un pincel,</span><br>
+    <span class="verso">esos abanicos curvos sobre tu mirada incandescente,</span><br>
+    <span class="verso">ese perfecto perfil que divide el cielo de tu cara,</span><br>
+    <span class="verso">y esos pétalos de color carmín que el alma me calma.</span><br>
+    <br>
+    <span class="verso">Me hacen perder la cordura, ¿y que más da?,</span><br>
+    <span class="verso">pues quisiera perderme en tu dulce mirar.</span><br>
+    <span class="verso">Eres perfecta frescura y es la única verdad</span><br>
+    <span class="verso">esa que provoca en mi cuerpo un suave temblar.</span><br>
+    <br>
+    <span class="verso">Ojeras bajo tus destellos se hacen notar,</span><br>
+    <span class="verso">y también tus pecas cerca esa curva suave,</span><br>
+    <span class="verso">pues me hacen pensar que tienen la llave</span><br>
+    <span class="verso">para por fin poderte alcanzar.</span><br>
+    <br>
+    <span class="verso">Un lunar como una peca de noche,</span><br>
+    <span class="verso">piel tejida como si fuese algodón;</span><br>
+    <span class="verso">tu belleza natural es un derroche,</span><br>
+    <span class="verso">es la calma que envuelve a mi corazón.</span>
+</div>
        </div>
         </article>
         </div>
@@ -61,16 +63,19 @@ es la calma que envuelve a mi corazón.<br>
     audio.volume = 0.1; 
 
     function iniciarExperiencia() {
-        // Reproduce la música
-        audio.play();
-        
-        // Desvanece y quita el mensaje de "Toca aquí"
-        var overlay = document.getElementById("overlay");
-        overlay.style.opacity = "0";
-        setTimeout(function() {
-            overlay.style.display = "none";
-        }, 500); // Espera medio segundo para que se vea suave el cierre
-    }
+    audio.play();
+    var overlay = document.getElementById("overlay");
+    overlay.style.opacity = "0";
+    setTimeout(function() {
+        overlay.style.display = "none";
+        // Esta línea es la que arranca la aparición de los versos
+        document.getElementById("poema-animado").classList.add("activado");
+    }, 500);
+}
+
+</script>
+</body>
+</html>
 </script>
 </body>
 </html>
